@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* Electronics E-commerce Theme
+   Primary: Deep Blue (#1E3A5F) - Trust, technology
+   Accent: Electric Blue (#00D4FF) - Innovation, energy
+   Secondary: Slate (#475569) - Sophistication
+   Background: Cool White (#F8FAFC)
+   Surface: Pure White (#FFFFFF)
+   Text: Dark Navy (#0F172A)
+   Border: Soft Gray (#E2E8F0)
+*/
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #0F172A;
+  --primary: #1E3A5F;
+  --primary-light: #2D5A8E;
+  --accent: #00D4FF;
+  --accent-dark: #00A3CC;
+  --secondary: #475569;
+  --surface: #FFFFFF;
+  --border: #E2E8F0;
+  --muted: #94A3B8;
+  --success: #10B981;
+  --danger: #EF4444;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-secondary: var(--secondary);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted) transparent;
+}
