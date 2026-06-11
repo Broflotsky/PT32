@@ -1,7 +1,9 @@
 import { IProduct } from "@/interfaces/product.interface";
 
+const APIURL = process.env.NEXT_PUBLIC_API_URL;
+
 export const getAllProducts = async () => {
-  const response = await fetch("http://localhost:3005/products");
+  const response = await fetch(`${APIURL}/products`);
 
   if (!response.ok) {
     throw new Error("No se pudieron obtener los productos");
